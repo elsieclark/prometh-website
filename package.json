@@ -1,0 +1,42 @@
+{
+  "name": "prometh-website",
+  "version": "1.0.0",
+  "description": "Website for interacting with promeths",
+  "main": "server.js",
+  "scripts": {
+    "test": "ava -s -v",
+    "lint": "eslint --fix **/*.{js,jsx}",
+    "lint:dry": "eslint **/*.{js,jsx}",
+    "test:dev": "ava -w",
+    "dev": "node scripts/dev.js",
+    "build": "node scripts/build.js",
+    "prod": "cross-env NODE_ENV=production && npm run build",
+    "postinstall": "npm run build",
+    "start": "node server/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/willdavidc/prometh-website.git"
+  },
+  "author": "Will Clark & Keyan Raahemifar",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/willdavidc/prometh-website/issues"
+  },
+  "homepage": "https://github.com/willdavidc/prometh-website#readme",
+  "dependencies": {
+    "classnames": "^2.2.5",
+    "create-react-class": "^15.6.2",
+    "express": "^4.16.2",
+    "lodash": "^4.17.4",
+    "nconf": "^0.8.5",
+    "react": "^16.0.0",
+    "vitreum": "^4.8.2"
+  },
+  "devDependencies": {
+    "ava": "^0.22.0",
+    "cross-env": "^5.0.5",
+    "eslint": "^4.8.0",
+    "eslint-plugin-react": "^7.4.0"
+  }
+}
