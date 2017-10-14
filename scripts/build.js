@@ -5,7 +5,7 @@ console.time(label);
 const _     = require('lodash');
 const steps = require('vitreum/steps');
 const Proj  = require('./project.json');
-const{libs, shared} = Proj;
+const {libs, shared} = Proj;
 
 Promise.resolve()
 	.then(()=>steps.clean())

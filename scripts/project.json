@@ -19,6 +19,7 @@
     "react-dom",
     "create-react-class",
     "lodash",
-    "classnames"
+    "classnames",
+    "pico-router"
   ]
 }

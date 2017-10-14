@@ -30,7 +30,9 @@
     "express": "^4.16.2",
     "lodash": "^4.17.4",
     "nconf": "^0.8.5",
+    "pico-router": "^2.0.0",
     "react": "^16.0.0",
+    "react-dom": "^16.0.0",
     "vitreum": "^4.8.2"
   },
   "devDependencies": {
