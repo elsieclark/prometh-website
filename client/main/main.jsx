@@ -14,7 +14,6 @@ const TopBar   = require('../shared/topbar/topbar.jsx');
 const Router = createRouter({
     '/': <AboutPage />,
     '/develop': <AgentPage />,
-    '/download': <RavenPage />,
     '/*': <FourOhFour />
 });
 
@@ -26,10 +25,6 @@ const navBarLinks = [
     {
         name: 'Develop',
         link: '/develop',
-    },
-    {
-        name: 'Download',
-        link: '/download'
     },
 ];
 

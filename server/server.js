@@ -1,10 +1,15 @@
+global.XMLHttpRequest = require("xmlhttprequest");
+
 const _           = require('lodash');
 const config      = require('nconf');
 const compression = require('compression');
 const express     = require('express');
 const app         = express();
+const favicon     = require('serve-favicon');
+
 app.use(compression());
 app.use(express.static(`${__dirname}/../build`));
+app.use(favicon(__dirname + '/../client/favicon.ico'));
 
 config.argv()
     .env({ lowerCase: true })

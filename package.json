@@ -25,21 +25,29 @@
   },
   "homepage": "https://github.com/willdavidc/prometh-website#readme",
   "dependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "bignumber.js": "^4.1.0",
     "classnames": "^2.2.5",
     "compression": "^1.7.1",
     "create-react-class": "^15.6.2",
+    "ethereumjs-testrpc": "^4.1.3",
     "express": "^4.16.2",
     "lodash": "^4.17.4",
     "nconf": "^0.8.5",
     "pico-router": "^2.0.0",
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
-    "vitreum": "^4.8.2"
+    "serve-favicon": "^2.4.5",
+    "vitreum": "^4.8.2",
+    "web3": "^0.20.1",
+    "xmlhttprequest": "^1.8.0"
   },
   "devDependencies": {
     "ava": "^0.22.0",
     "cross-env": "^5.0.5",
-    "eslint": "^4.8.0",
-    "eslint-plugin-react": "^7.4.0"
+    "eslint": "^4.9.0",
+    "eslint-plugin-react": "^7.4.0",
+    "webpack": "^3.7.1"
   }
 }
