@@ -53,7 +53,7 @@ const Agentpage = createClass({
                 <div className='textArea'>
                     <h3 className='title'>Developing with Prometheus? It couldn't be easier!</h3>
                     <p className='para'>Simply implement an Agent contract with two headers matching those shown to the left, deploy it to the Ethereum blockchain, and then submit the address using the form below. That's it!</p>
-                    <p className='para'>In return, you'll get the address of your contract's very own Prometh. Make sure to keep its balance topped up, or else no-one in our global network of Ravens will want to execute the calls.</p>
+                    <p className='para'>In return, you'll get the address of your contract's very own PromEth. Make sure to keep its balance topped up, or else no-one in our global network of Ravens will want to execute the calls.</p>
                 </div>
                 <div className='codeArea'>
                     <div className='codeBlock'>
@@ -76,7 +76,7 @@ const Agentpage = createClass({
                     </div>
                 </div>
                 <div className='addressDisplay'>
-                    <p>Prometh address: {this.state.promethAddress}</p>
+                    <p>PromEth address: {this.state.promethAddress}</p>
                 </div>
             </div>
             <div className='box footer'>
