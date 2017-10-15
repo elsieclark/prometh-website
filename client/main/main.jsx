@@ -12,7 +12,7 @@ const FourOhFour = require('./fourohfour/fourohfour.jsx');
 const TopBar   = require('../shared/topbar/topbar.jsx');
 
 const Router = createRouter({
-	'/': <AboutPage />,
+    '/': <AboutPage />,
     '/develop': <AgentPage />,
     '/download': <RavenPage />,
     '/*': <FourOhFour />
@@ -34,17 +34,17 @@ const navBarLinks = [
 ];
 
 const Main = createClass({
-	getDefaultProps : function(){
-		return {
+    getDefaultProps: function() {
+        return {
             url: '/'
-		};
-	},
-	render : function(){
-		return <div className='main'>
+        };
+    },
+    render: function() {
+        return <div className='main'>
             <TopBar pages={navBarLinks} />
-			<Router defaultUrl={this.props.url} />
-		</div>
-	}
+            <Router defaultUrl={this.props.url} />
+        </div>;
+    }
 });
 
 module.exports = Main;
