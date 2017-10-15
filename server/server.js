@@ -1,8 +1,10 @@
-const _       = require('lodash');
-const config  = require('nconf');
-const express = require('express');
-const app     = express();
-app.use(express.static(`${__dirname}/build`));
+const _           = require('lodash');
+const config      = require('nconf');
+const compression = require('compression');
+const express     = require('express');
+const app         = express();
+app.use(compression());
+app.use(express.static(`${__dirname}/../build`));
 
 config.argv()
 	.env({lowerCase: true})

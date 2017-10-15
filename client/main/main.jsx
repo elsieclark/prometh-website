@@ -1,18 +1,49 @@
-const _           = require('lodash');
-const createClass = require('create-react-class');
-const React       = require('react');
+const _            = require('lodash');
+const createClass  = require('create-react-class');
+const createRouter = require('pico-router').createRouter;
+const Link         = require('pico-router').Link;
+const React        = require('react');
 
+const AboutPage  = require('./aboutpage/aboutpage.jsx');
+const AgentPage  = require('./agentpage/agentpage.jsx');
+const RavenPage  = require('./ravenpage/ravenpage.jsx');
+const FourOhFour = require('./fourohfour/fourohfour.jsx');
+
+const TopBar   = require('../shared/topbar/topbar.jsx');
+
+const Router = createRouter({
+	'/': <AboutPage />,
+    '/develop': <AgentPage />,
+    '/download': <RavenPage />,
+    '/*': <FourOhFour />
+});
+
+const navBarLinks = [
+    {
+        name: 'About',
+        link: '/',
+    },
+    {
+        name: 'Develop',
+        link: '/develop',
+    },
+    {
+        name: 'Download',
+        link: '/download'
+    },
+];
 
 const Main = createClass({
 	getDefaultProps : function(){
 		return {
-
+            url: '/'
 		};
 	},
 	render : function(){
 		return <div className='main'>
-            Main Component Ready.
-		</div>;
+            <TopBar pages={navBarLinks} />
+			<Router defaultUrl={this.props.url} />
+		</div>
 	}
 });
 
