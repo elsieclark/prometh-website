@@ -102,9 +102,8 @@ const AboutPage = createClass({
                             Asynchronous Ethereum. Right now, and any other time.
                         </h3>
                         <p>
-
-
-                            by the whims of their usersFunctions can be called asynchronously in the future, if and whenever a certain condition arises.</p>
+                            There's safety in numbers. By crowdsourcing asynchronous function calls across a wide enough population, we can build a callback marketplace.
+                        </p>
                     </div>
                 </div>
                 <div className='para'>
@@ -112,7 +111,7 @@ const AboutPage = createClass({
                         <h3>
                             Unleash your DApp with the power of a State Machine.
                         </h3>
-                        <p>Most contracts are bound Functions can be called asynchronously in the future, if and whenever a certain condition arises.</p>
+                        <p>Prometheus gives your contracts the ability to act upon changes of state within the Ethereum network. With new oracles being created every day, that's a whole world of possibilities.</p>
                     </div>
                 </div>
                 <div className='para'>
@@ -120,7 +119,7 @@ const AboutPage = createClass({
                         <h3>
                             Distributed. Trustless. Versatile. Prometheus.
                         </h3>
-                        <p>Most contracts are bound Functions can be called asynchronously in the future, if and whenever a certain condition arises.</p>
+                        <p>Prometheus contains all the neccesary safeguards to protect users and customers from each other, allowing for a stable, trustless, and open-source ecosystem. </p>
                     </div>
                 </div>
             </div>
