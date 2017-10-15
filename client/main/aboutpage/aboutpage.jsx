@@ -137,7 +137,7 @@ const AboutPage = createClass({
                 </div>
                 <div className='column'>
                     <h3>PromEths</h3>
-                    <p className='description'>Each PromEth is bound to a single Agent, and it removes the need for trust. It stores the Ether rewards on the your behalf, to ensure neither side can cheat the other.</p>
+                    <p className='description'>Each PromEth is bound to a single Agent, and it removes the need for trust. It stores the Ether rewards on your behalf, to ensure nobody can cheat, and people get the rewards they expect.</p>
                     <div className='boxes'>
                         <div className='prometh'></div>
                         <div className='prometh'></div>
